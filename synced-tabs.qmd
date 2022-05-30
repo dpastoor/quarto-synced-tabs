@@ -1,0 +1,55 @@
+---
+title: "Getting Started"
+format:
+  html:
+    toc: true
+    include-after-body:
+      - sync-tabs.html
+---
+
+
+An example with multiple panels
+
+::: panel-tabset
+## R
+
+Here is some R code
+
+```{r}
+lang <- "R"
+other_lang <- "python"
+sprintf("%s is my favorite language, but %s is great too!", lang, other_lang)
+```
+
+## Python
+
+Here is some separate python code
+
+```{python}
+lang = "python"
+other_lang = "R"
+print(f'{lang} is my favorite language, but {other_lang} is great too!')
+```
+
+:::
+
+Some more code
+
+::: panel-tabset
+## R
+
+Here is some more R code
+
+```{r}
+Sys.info()['sysname']
+```
+
+## Python
+
+Same with python
+```{python}
+import sys
+sys.platform
+```
+
+:::
