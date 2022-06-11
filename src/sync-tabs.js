@@ -1,3 +1,16 @@
+// get all related selectors such that track which are R/python/etc
+// attach click handler that will select and activate all related tabs
+// and diactivate others
+let selectorsToSync = {
+  "R": {
+    "tabIds": ["tabset-1-1-tab", "tabset-2-1-tab"],
+    "tabPanelIds": ["tabset-1-1", "tabset-2-1"]
+  },
+  "Python": {
+    "tabIds": ["tabset-1-2-tab", "tabset-2-2-tab"],
+    "tabPanelIds": ["tabset-1-2", "tabset-2-2"]
+  }
+}
 function syncSelectors(lang) {
     let targets = [];
     function toggleIfMatches(item, lang) {
